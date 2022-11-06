@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор на JavaScript</title>
+    <link rel="stylesheet" href="./assets/normalize.css" />
+    <link rel="stylesheet" href="./assets/task2.css" />
+  </head>
+  <body>
+    <article class="calc">
+      <h1 class="calc__title">Калькуляторы на JavaScript</h1>
+
+      <section class="calc1">
+        <h3 class="calc1__title">Калькулятор 1</h3>
+        <output class="calc1__result" id="result"></output>
+        <button type="button" class="calc1__btn calc1__btn_reset">C</button>
+        <button type="button" class="calc1__btn calc1__btn_parentheses">
+          ( )
+        </button>
+        <button type="button" class="calc1__btn calc1__btn_percent">%</button>
+        <button type="button" class="calc1__btn calc1__btn_operator">/</button>
+
+        <button type="button" class="calc1__btn">7</button
+        ><button type="button" class="calc1__btn">8</button
+        ><button type="button" class="calc1__btn">9</button
+        ><button type="button" class="calc1__btn calc1__btn_operator">*</button>
+
+        <button type="button" class="calc1__btn">4</button>
+        <button type="button" class="calc1__btn">5</button>
+        <button type="button" class="calc1__btn">6</button>
+        <button type="button" class="calc1__btn calc1__btn_operator">-</button>
+
+        <button type="button" class="calc1__btn">1</button
+        ><button type="button" class="calc1__btn">2</button
+        ><button type="button" class="calc1__btn">3</button
+        ><button type="button" class="calc1__btn calc1__btn_operator">+</button>
+
+        <button type="button" class="calc1__btn">0</button
+        ><button type="button" class="calc1__btn calc1__btn_equal">=</button>
+        <button type="button" class="calc1__btn calc1__btn_cat">
+          <img
+            src="./assets/images/minicat.png"
+            alt="лого с котом"
+            class="calc1__btn_cat"
+          />
+        </button>
+      </section>
+      <section class="calc2">
+        <h3 class="calc2__title">Калькулятор 2</h3>
+        <button
+          type="button"
+          class="calc2__btn calc2__btn_plus"
+          onclick="calcPlus()"
+        >
+          +
+        </button>
+        <button
+          type="button"
+          class="calc2__btn calc2__btn_minus"
+          onclick="calcMinus()"
+        >
+          -
+        </button>
+        <button
+          type="button"
+          class="calc2__btn calc2__btn_division"
+          onclick="calcDivision()"
+        >
+          /
+        </button>
+        <button
+          type="button"
+          class="calc2__btn calc2__btn_multiplication"
+          onclick="calcMultiplication()"
+        >
+          *
+        </button>
+      </section>
+    </article>
+    <script src="./calc1.js"></script>
+    <script src="./calc2.js"></script>
+  </body>
+</html>

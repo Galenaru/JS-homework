@@ -1,4 +1,4 @@
-let userGreeting = "Привет, странник/ца";
+let userGreeting = "Здравствуй, странник/ца";
 function showMessage() {
   alert(`${userGreeting}`);
   let nameUser = prompt("Как тебя зовут?", "Аноним");
